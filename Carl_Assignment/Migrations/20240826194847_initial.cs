@@ -7,7 +7,7 @@ namespace Carl_Assignment.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.Sql("CREATE SEQUENCE ProductID_Sequence START WITH 100001 INCREMENT BY 1;");
+            migrationBuilder.Sql("CREATE SEQUENCE ProductID_Sequence START WITH 100002 INCREMENT BY 1;");
             migrationBuilder.CreateTable(
                 name: "Product",
                 columns: table => new
