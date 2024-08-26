@@ -106,7 +106,7 @@ namespace Carl_Assignment.Controllers
             if (error.error_code == 404)
                 return NotFound();
             else if (error.error_code == 400)
-                return BadRequest(error);
+                return BadRequest(error.error_message);
             else
                 return Ok(productresult);
         }

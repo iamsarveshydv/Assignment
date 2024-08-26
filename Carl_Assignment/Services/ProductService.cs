@@ -155,6 +155,13 @@ namespace Carl_Assignment.Services
                     return new Tuple<Product, ErrorDto>(null, error);
                 }
 
+                if (dbProduct.Stock < quantity)
+                {
+                    error.error_code = 400;
+                    error.error_message = "Quantity cannot be greater than current stock.";
+                    return new Tuple<Product, ErrorDto>(null, error);
+                }
+
                 dbProduct.Stock = dbProduct.Stock - quantity;
 
                 await _context.SaveChangesAsync();
