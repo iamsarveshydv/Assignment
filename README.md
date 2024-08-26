@@ -102,7 +102,7 @@ git clone https://github.com/iamsarveshydv/Assignment.git
 
 Change to cloned repo
 ```sh
-cd ./Carl_Assignment
+cd Assignment/Carl_Assignment
 ```
 
 Execute the project 
