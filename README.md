@@ -86,9 +86,10 @@ public class Product
 
 This project is using sql server as database.
 In `Appsettings.json` file `sqlConnection` key, I am using LocalDb as our test database. On first time project execution, it will create a database called `Assignment` and one table `Product` with above schema. It seeds the table with 2 dummy records.
-<p>Product table ProductId column is 6 digit int starting from `100000` and incrementing by 1.
+
+Product table ProductId column is 6 digit int starting from `100000` and incrementing by 1.
 I have used Entity Framework Code First approach to generate table and perform CRUD operations.
-All Database operations (except `Delete` endpoint, which is synchronous as only 1 row is affected)</p>
+All Database operations (except `Delete` endpoint, which is synchronous as only 1 row is affected).
 
 ## Unit Tests
 
